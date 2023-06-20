@@ -7,7 +7,7 @@ html,
     body {
       background: #eee;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
+      
       color: #000;
       margin: 0;
       padding: 0;
@@ -21,6 +21,7 @@ html,
     .swiper-slide {
       background-position: center;
       background-size: cover;
+      height:100vh;
     }
 
  
@@ -34,12 +35,44 @@ html,
         background-color: yellow;
     }
 
-.text-center{
+.mySwiper .swiper-slide i{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    text-size-adjust: 100px;
+    font-size: 40px;
+    
 }
+
+
+
+@media (min-width:991px) {
+    .swiper-slide{
+        height: 800px;
+    }
+    .swiper-slide br{
+        display: none;
+    }
+    
+    
+}
+@media (max-width:991px) {
+    
+    .swiper-button-next{
+        display: none;
+    }.swiper-button-prev{
+        display: none;
+    }.swiper-pagination{
+        display: none;
+    }
+    
+}
+
+font-family: 'Instrument Serif', serif;
+font-family: 'Pangolin', cursive;
+
+
+
+
 
